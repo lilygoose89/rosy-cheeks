@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: solid 0.25px powderblue;
+}
+h1,h2,h3 {
+  font-family: 'Antic Slab', serif;
+}
+h4,h5,h6,p {
+  font-family: 'PT Sans', sans-serif;
+}
