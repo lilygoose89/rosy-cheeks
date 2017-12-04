@@ -1,12 +1,237 @@
+/* universal styles applied across the site */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   border: solid 0.25px powderblue;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 h1,h2,h3 {
   font-family: 'Antic Slab', serif;
 }
 h4,h5,h6,p {
   font-family: 'PT Sans', sans-serif;
+}
+p {
+  margin-bottom: 1.5rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: inherit;
+}
+a.button {
+  background-color: #7dc95e;
+  color: white;
+  font-family: 'Antic Slab', serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 45px;
+  padding: 5px 10px;
+  margin: 5%;
+}
+a.button:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+/* nav styling in default desktop view */
+nav {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 10px grey;
+}
+nav h2 {
+  color: #7dc95e;
+  text-transform: uppercase;
+}
+nav a:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
+}
+/* nav styling in mobile view */
+
+/* hero styling */
+#hero {
+  padding-top: 10vh;
+}
+#hero h1 {
+  margin: 0;
+}
+.hero-image {
+  background-image: url("/images/rosycheeks-hero.jpg");
+  background-color: #7dc95e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.hero-title {
+  padding-left: 50%;
+  padding-right: 2%;
+}
+.hero-info {
+
+}
+
+/* helpers ----------------------------------------------------------------- */
+
+.text-white {
+  color: white;
+}
+.text-green {
+    color: #7dc95e;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-green {
+  background-color: #7dc95e;
+}
+.container-center {
+  margin: 0 auto;
+}
+.container-right {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* padding/margins --------------------------------------------------------- */
+.pad-all-xs {
+  padding: 1%;
+}
+.pad-all-s {
+  padding: 5%;
+}
+.pad-all-m {
+  padding: 10%;
+}
+.pad-all-l {
+  padding: 20%;
+}
+.pad-top-xs {
+  padding-top: 1%;
+}
+.pad-top-s {
+  padding-top: 5%;
+}
+.pad-top-m {
+  padding-top: 10%;
+}
+.pad-top-l {
+  padding-top: 20%;
+}
+.pad-right-xs {
+  padding-right: 1%;
+}
+.pad-right-s {
+  padding-right: 5%;
+}
+.pad-right-m {
+  padding-right: 10%;
+}
+.pad-right-l {
+  padding-right: 20%;
+}
+.pad-bottom-xs {
+  padding-bottom: 1%;
+}
+.pad-bottom-s {
+  padding-bottom: 5%;
+}
+.pad-bottom-m {
+  padding-bottom: 10%;
+}
+.pad-bottom-l {
+  padding-bottom: 20%;
+}
+.pad-left-xs {
+  padding-left: 1%;
+}
+.pad-left-s {
+  padding-left: 5%;
+}
+.pad-left-m {
+  padding-left: 10%;
+}
+.pad-left-l {
+  padding-left: 20%;
+}
+.margin-all-xs {
+  margin: 1%
+}
+.margin-all-s {
+  margin: 5%
+}
+.margin-all-m {
+  margin: 10%
+}
+.margin-all-l {
+  margin: 20%
+}
+.margin-top-xs {
+  margin-top: 1%
+}
+.margin-top-s {
+  margin-top: 5%
+}
+.margin-top-m {
+  margin-top: 10%
+}
+.margin-top-l {
+  margin-top: 20%
+}
+.margin-right-xs {
+  margin-right: 1%
+}
+.margin-right-s {
+  margin-right: 5%
+}
+.margin-right-m {
+  margin-right: 10%
+}
+.margin-right-l {
+  margin-right: 20%
+}
+.margin-bottom-xs {
+  margin-bottom: 1%
+}
+.margin-bottom-s {
+  margin-bottom: 5%
+}
+.margin-bottom-m {
+  margin-bottom: 10%
+}
+.margin-bottom-l {
+  margin-bottom: 20%
+}
+.margin-left-xs {
+  margin-left: 1%
+}
+.margin-left-s {
+  margin-left: 5%
+}
+.margin-left-m {
+  margin-left: 10%
+}
+.margin-left-l {
+  margin-left: 20%
 }

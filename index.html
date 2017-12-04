@@ -5,7 +5,7 @@ title: rosy cheeks restaurant - chiang mai
 <body>
   <!-- this is the sticker header nav with links to anchors on the same page -->
   <header>
-    <nav class="grid-spaceAround">
+    <nav class="grid-spaceAround-middle">
       <a href="#menu"><h2>menu</h2></a>
       <a href="#about"><h2>about</h2></a>
       <a href="#gallery"><h2>gallery</h2></a>
@@ -13,17 +13,18 @@ title: rosy cheeks restaurant - chiang mai
       <a href="#contact"><h2>contact</h2></a>
     </nav>
   </header>
-  <!-- this is the hero image which should take up the entire view height, text and information should be on top of the image on desktop and beneath the image in mobile -->
+  <!-- this is the hero image which should take up the entire view height -->
   <section id="hero" class="hero-image">
-    <div>
+    <div class="hero-title container-right text-right text-white col-12">
       <h1>Welcome to Rosy Cheeks Restaurant</h1>
-      <h3>Chiang Mai, Thailand</h3>
+      <h3 class="pad-top-xs pad-bottom-s">Chiang Mai, Thailand</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
     </div>
-    <div class="grid">
-      <div id="hours" class="col-6_md-12">
+    <!-- this is the container for restaurant information which should be top of the image on desktop and beneath the image in mobile -->
+    <div class="container-right grid">
+      <div id="hours" class="col-4 hero-info bg-green text-white">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
         <div class="grid">
           <div>
@@ -37,7 +38,7 @@ title: rosy cheeks restaurant - chiang mai
         </div>
         <h4>Closed Sundays</h4>
       </div>
-      <div id="location" class="col-6_md-12">
+      <div id="location" class="col-4 hero-info bg-white text-green">
         <i class="fa fa-map-marker" aria-hidden="true"></i>
         <p>Soi Ban Ling Ha 3,Tambon Su Thep, Amphoe Mueang, Chiang Mai 50200</p>
         <a target="_blank" href="https://www.google.co.th/maps/dir//Rosy-Cheeks,+Suthep,+Moung,+Chiang+Mai+50200/@18.7920902,98.9602075,14.11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x30da3a708ebc0e23:0x9c1a6fc559998b6b!2m2!1d98.956656!2d18.79106" class="button">directions</a>
@@ -329,7 +330,7 @@ title: rosy cheeks restaurant - chiang mai
       <a href=""><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
       <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
       <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href=""><img src="images/wongnai-logo.png"/></a>
+      <a href=""><img src="images/wongnai-logo.png" alt="wongnai icon"/></a>
     </div>
     <h3>093 842 0197</h3>
   </footer>
