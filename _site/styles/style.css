@@ -11,9 +11,11 @@ img {
 }
 h1,h2,h3 {
   font-family: 'Antic Slab', serif;
+  color: #353535
 }
 h4,h5,h6,p {
   font-family: 'PT Sans', sans-serif;
+  color: #353535
 }
 p {
   margin-bottom: 1.5rem;
@@ -32,25 +34,31 @@ a.button {
   background-color: #7dc95e;
   color: white;
   font-family: 'Antic Slab', serif;
+  line-height: 2rem;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 45px;
-  padding: 5px 10px;
-  margin: 5%;
+  padding: 5px 20px;
 }
-a.button:hover {
-  transform: scale(1.1);
-  transition: all .2s ease-in-out;
+button {
+  background-color: #7dc95e;
+  color: white;
+  font-family: 'Antic Slab', serif;
+  line-height: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 45px;
+  padding: 5px 20px;
 }
-/* nav styling in default desktop view */
+/* nav styling in default desktop view ------------------------------------- */
 nav {
   position: fixed;
   z-index: 99;
   top: 0;
   height: 50px;
-  width: 100%;
+  width: 102vw;
   background-color: white;
-  box-shadow: 2px 2px 10px grey;
+  box-shadow: 2px 2px 20px grey;
 }
 nav h2 {
   color: #7dc95e;
@@ -61,9 +69,9 @@ nav a:hover {
   transform: scale(1.1);
   transition: all .2s ease-in-out;
 }
-/* nav styling in mobile view */
+/* nav styling in mobile view ---------------------------------------------- */
 
-/* hero styling */
+/* hero styling ------------------------------------------------------------ */
 #hero {
   padding-top: 10vh;
 }
@@ -79,20 +87,61 @@ nav a:hover {
   overflow-y: hidden;
 }
 .hero-title {
-  padding-left: 50%;
-  padding-right: 2%;
+  padding: 15% 1% 0 50%;
 }
 .hero-info {
-
+  left: 67%;
 }
+/* menu styling ------------------------------------------------------------ */
+/*.menu {
 
-/* helpers ----------------------------------------------------------------- */
-
+}*/
+/* about us ---------------------------------------------------------------- */
+.about-image {
+  background-image: url("/images/RoseCheeksCMEatsNewcomer.jpg");
+  background-color: #7dc95e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.about-info {
+  width: 400px;
+  left: 69%;
+  top: 50%;
+}
+/* contact us -------------------------------------------------------------- */
+.contact-image {
+  background-image: url("/images/quinoabowl.jpg");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  overflow-y: hidden;
+}
+form input,textarea {
+  width: 90%;
+  margin: 1% auto;
+  line-height: 2em;
+  font-family: 'PT Sans', sans-serif;
+}
+form button {
+  font-size: 1.5rem;
+  margin: 2% 2%;
+}
+/* footer -------------------------------------------------------------- */
+.footer-icon {
+  font-size: 4em;
+}
+.footer-img {
+  max-height: 55px;
+}
+/* typography and text helpers --------------------------------------------- */
 .text-white {
   color: white;
 }
 .text-green {
-    color: #7dc95e;
+  color: #7dc95e;
 }
 .text-center {
   text-align: center;
@@ -100,11 +149,39 @@ nav a:hover {
 .text-right {
   text-align: right;
 }
+.text-l {
+  font-size: 2.5rem;
+}
+.text-m {
+  font-size: 1.5rem;
+}
+.text-shadow {
+  text-shadow: 2px 2px 5px #3f3f3f;
+}
+/* backgrounds and containers */
 .bg-white {
   background-color: white;
 }
+.bg-white-trans {
+  background-color: rgba(255, 255, 255, 0.8)
+}
 .bg-green {
   background-color: #7dc95e;
+}
+.bg-pink {
+  background-color: #eaa1a1;
+}
+.bg-pink-trans {
+  background-color: rgba(234, 161, 161, 0.8)
+}
+.bg-dark {
+  background-color: #353535;
+}
+.bg-brick {
+  background-image: url("/images/brick.jpg");
+  background-color: white;
+  background-size: 100vw;
+  overflow-y: hidden;
 }
 .container-center {
   margin: 0 auto;
@@ -113,8 +190,25 @@ nav a:hover {
   margin-left: auto;
   margin-right: 0;
 }
-
-/* padding/margins --------------------------------------------------------- */
+.shadow {
+  box-shadow: 2px 2px 20px grey;
+}
+/* positioning helpers ----------------------------------------------------- */
+.position-rel {
+  position: relative;
+}
+.position-abs {
+  position: absolute;
+}
+@media all and (max-width:768px) {
+  .position-abs {
+    position: static;
+  }
+  .position-rel {
+    position: static;
+  }
+}
+/* padding/margins helpers ------------------------------------------------- */
 .pad-all-xs {
   padding: 1%;
 }
@@ -235,3 +329,4 @@ nav a:hover {
 .margin-left-l {
   margin-left: 20%
 }
+/* odd helpers ------------------------------------------------------------- */
