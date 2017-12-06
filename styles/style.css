@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  border: solid 0.25px powderblue;
+  /*border: solid 0.25px powderblue;*/
 }
 img {
   max-width: 100%;
@@ -40,6 +40,24 @@ a.button {
   border-radius: 45px;
   padding: 5px 20px;
 }
+a.button:hover {
+  font-size: 1.6rem;
+  transition: all .2s ease-in-out;
+}
+a.button-s {
+  background-color: #7dc95e;
+  color: white;
+  font-family: 'Antic Slab', serif;
+  line-height: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 45px;
+  padding: 5px 20px;
+}
+a.button-s:hover {
+  font-size: 1.1rem;
+  transition: all .2s ease-in-out;
+}
 button {
   background-color: #7dc95e;
   color: white;
@@ -49,6 +67,10 @@ button {
   text-transform: uppercase;
   border-radius: 45px;
   padding: 5px 20px;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: all .2s ease-in-out;
 }
 /* nav styling in default desktop view ------------------------------------- */
 nav {
@@ -103,7 +125,7 @@ nav a:hover {
 #mobile-menu a:hover {
   color: white;
   font-weight: bold;
-  transition: all .2s ease-in-out
+  transition: all .2s ease-in-out;
 }
 #hamburger{
   position: absolute;
@@ -138,7 +160,8 @@ nav a:hover {
   padding: 15% 1% 0 50%;
 }
 .hero-info {
-  left: 67%;
+  padding-left: 58%;
+  padding-right: 1.8%;
 }
 /* food menu styling ------------------------------------------------------------ */
 /*.food-menu {
@@ -154,9 +177,9 @@ nav a:hover {
   overflow-y: hidden;
 }
 .about-info {
-  width: 400px;
-  left: 69%;
-  top: 50%;
+  padding-top: 30%;
+  padding-left: 58%;
+  padding-right: 1%;
 }
 /* contact us -------------------------------------------------------------- */
 .contact-image {
