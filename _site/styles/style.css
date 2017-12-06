@@ -56,7 +56,7 @@ nav {
   z-index: 99;
   top: 0;
   height: 50px;
-  width: 102vw;
+  width: 102%;
   background-color: white;
   box-shadow: 2px 2px 20px grey;
 }
@@ -75,13 +75,13 @@ nav a:hover {
   z-index: 98;
   top: 0;
   height: 50px;
-  width: 600px;
+  width: 100%;
   background-color: white;
   box-shadow: 2px 2px 20px grey;
 }
 /* mobile menu ------------------------------------------------------------- */
 #mobile-menu {
-  background-color: #eaa1a1;
+  background-color: #7dc95e;
   text-align: center;
   text-transform: uppercase;
   position: fixed;
@@ -95,19 +95,25 @@ nav a:hover {
 #mobile-menu.mobile-menu-visible {
   display: block;
 }
+#mobile-menu a {
+  color: white;
+  font-size: 4rem;
+  font-family:  'Antic Slab', serif;
+}
 #mobile-menu a:hover {
   color: white;
   font-weight: bold;
+  transition: all .2s ease-in-out
 }
 #hamburger{
   position: absolute;
+  z-index: 999;
   right: 20px;
   display: none !important;
 }
 @media all and (max-width:768px) {
   #hamburger {
     display: block !important;
-    z-index: 999;
   }
   #menu {
     display: none;
@@ -134,8 +140,8 @@ nav a:hover {
 .hero-info {
   left: 67%;
 }
-/* menu styling ------------------------------------------------------------ */
-/*.menu {
+/* food menu styling ------------------------------------------------------------ */
+/*.food-menu {
 
 }*/
 /* about us ---------------------------------------------------------------- */
