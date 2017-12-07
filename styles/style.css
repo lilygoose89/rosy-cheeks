@@ -26,6 +26,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  color: inherit;
 }
 a:visited {
   color: inherit;
@@ -165,8 +166,9 @@ nav a:hover {
   text-align: right;
 }
 .hero-info {
-  padding-left: 58%;
-  padding-right: 1.8%;
+  margin-left: 58%;
+  margin-right: 0.4%;
+  max-width: 100%;
 }
 @media all and (max-width:768px) {
   .hero-image {
@@ -178,9 +180,8 @@ nav a:hover {
     text-align: center !important;
   }
   .hero-info {
-    padding: 0;
-    margin-top: auto;
-    margin-bottom: 0;
+    width: 100%;
+    margin: auto 0;
   }
 }
 /* food menu styling ------------------------------------------------------------ */
@@ -204,7 +205,7 @@ nav a:hover {
   background-color: #7dc95e;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  /*background-position: center;*/
   height: 100vh;
   overflow-y: hidden;
 }
@@ -238,6 +239,7 @@ form input,textarea {
   margin: 1% auto;
   line-height: 2em;
   font-family: 'PT Sans', sans-serif;
+  border: 0.25px inset rgba(121,121,121,0.2) !important;
 }
 form button {
   font-size: 1.5rem;
@@ -248,7 +250,12 @@ form button {
   font-size: 4em;
 }
 .footer-img {
-  max-height: 55px;
+  max-height: 60px;
+  max-width: 60px;
+  padding-top: 5px;
+}
+footer a:hover {
+  color: white;
 }
 /* typography and text helpers --------------------------------------------- */
 .text-white {
@@ -326,6 +333,9 @@ form button {
   }
 }
 /* padding/margins helpers ------------------------------------------------- */
+.max-width {
+  max-width: 100%;
+}
 .pad-all-xs {
   padding: 1%;
 }
