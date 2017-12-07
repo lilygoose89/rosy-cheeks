@@ -96,7 +96,7 @@ nav a:hover {
   position: fixed;
   z-index: 98;
   top: 0;
-  height: 35px;
+  height: 40px;
   width: 100%;
   background-color: white;
   box-shadow: 2px 2px 20px grey;
@@ -131,6 +131,7 @@ nav a:hover {
   position: absolute;
   z-index: 999;
   right: 20px;
+  margin-top: 5px;
   display: none !important;
 }
 @media all and (max-width:768px) {
@@ -153,6 +154,7 @@ nav a:hover {
   background-color: #7dc95e;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   overflow-y: hidden;
 }
@@ -202,6 +204,7 @@ nav a:hover {
   background-color: #7dc95e;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   overflow-y: hidden;
 }
