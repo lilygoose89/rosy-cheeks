@@ -7,8 +7,14 @@ keywords: >-
   chiang mai,healthy food chiang mai,chiang mai food no msg,rosy cheeks chiang
   mai,rosy cheeks cnx,rosy cheeks restaurant,best healthy restaurants chiang
   mai, fuji restaurant chiang mai
-food-menu: 
- 
+recommended-menu:
+  - 1: Item Name
+    2: Description
+    3: Price
+thai-menu:
+  - 1: Item Name
+    2: Description
+    3: Price
 hero_image: /images/rosycheeks-hero.jpg
 about_image: /images/RoseCheeksCMEatsNewcomer.jpg
 contact_image: /images/quinoabowl.jpg
@@ -77,18 +83,24 @@ contact_image: /images/quinoabowl.jpg
   <section id="food-menu" class="bg-brick">
     <div class="bg-pink-trans shadow margin-all-m pad-all-s">
       <h2 class="text-l text-center pad-bottom-s">Menu</h2>
-      <!-- this food menu will be a for-loop that needs to be edited by the front matter editor -->
+      <!-- these food menus will be a for-loop that needs to be edited by the front matter editor -->
+      <h3 class="text-m text-center pad-bottom-s">Recommended Items</h3>
+      {% for reccommened-menu in page.reccommened-menu %}
       <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">Menu item NAME goes here</h4>
-        <p class="col-7_sm-12">Menu item DESCRIPTION goes here</p>
-        <p class="price col-2_sm-12">100฿</p>
+        <h4 class="col-3_sm-12">{{reccommened-menu.1}}</h4>
+        <p class="col-7_sm-12">{{reccommened-menu.2}}</p>
+        <p class="price col-2_sm-12">{{reccommened-menu.3}}</p>
       </div>
-      <h2 class="text-l text-center pad-bottom-s">Drinks</h2>
+      {% endfor %}
+      <h3 class="text-m text-center pad-bottom-s">Thai Family Recipes</h3>
+      {% for thai-menu in page.thai-menu-menu %}
       <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">Menu item NAME goes here</h4>
-        <p class="col-7_sm-12">Menu item DESCRIPTION goes here</p>
-        <p class="price col-2_sm-12">100฿</p>
+        <h4 class="col-3_sm-12">{{thai-menu.1}}</h4>
+        <p class="col-7_sm-12">{{thai-menu.2}}</p>
+        <p class="price col-2_sm-12">{{thai-menu.3}}</p>
       </div>
+      {% endfor %}
+
     </div>
   </section>
   <!-- this is the about section which has a full-width background image and a small box on the right for text -->
