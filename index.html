@@ -12,17 +12,34 @@ recommended-menu:
     description: Description of the item goes here
     price: 100 ฿
 thai-menu:
-  - item:
-    description:
-    price:
+  - item: Item Name
+    description: Description of the item goes here
+    price: 100 ฿
 fusion-menu:
-  - item:
-    description:
-    price:
+  - item: Item Name
+    description: Description of the item goes here
+    price: 100 ฿
 salad-menu:
-  - item:
+  - item: Item Name
+    description: Description of the item goes here
+    price: 100 ฿
+drink-menu:
+  - item: Item Name
+    price: 100 ฿
+coffee-menu:
+  - item: Item Name
+    hot-price: Description of the item goes here
+    cold-price: 100 ฿
+tea-menu:
+  - item: Item Name
+    price: 100 ฿
+shake-menu:
+  - item: Item Name
+    price: 100 ฿
+smoothie-menu:
+  - item: Item Name
     description:
-    price:
+    price: 100 ฿
 hero_image: /images/rosycheeks-hero.jpg
 about_image: /images/RoseCheeksCMEatsNewcomer.jpg
 contact_image: /images/quinoabowl.jpg
@@ -121,10 +138,50 @@ contact_image: /images/quinoabowl.jpg
       <div class="grid food-menu pad-bottom-xs">
         <h4 class="col-3_sm-12">{{salad-menu.item}}</h4>
         <p class="col-7_sm-12">{{salad-menu.description}}</p>
-        <p class="price col-2_sm-12">{salad-menu.price}}</p>
+        <p class="price col-2_sm-12">{{salad-menu.price}}</p>
       </div>
       {% endfor %}
     </div>
+      <h2 class="text-l text-center pad-bottom-s">Beverages</h2>
+      <h3 class="text-m text-center pad-bottom-s">Soft Drinks</h3>
+      {% for drink-menu in page.drink-menu %}
+      <div class="grid food-menu pad-bottom-xs">
+        <h4 class="col-10_sm-12">{{drink-menu.item}}</h4>
+        <p class="price col-2_sm-12">{{drink-menu.price}}</p>
+      </div>
+      {% endfor %}
+      <h3 class="text-m text-center pad-bottom-s">Coffee</h3>
+      {% for coffee-menu in page.coffee-menu %}
+      <div class="grid food-menu pad-bottom-xs">
+        <h4 class="col-8_sm-12">{{coffee-menu.item}}</h4>
+        <p class="price col-2_sm-6">{{coffee-menu.hot-price}}</p>
+        <p class="price col-2_sm-6">{{coffee-menu.cold-price}}</p>
+      </div>
+      {% endfor %}
+      <h3 class="text-m text-center pad-bottom-s">Tea</h3>
+      {% for tea-menu in page.tea-menu %}
+      <div class="grid food-menu pad-bottom-xs">
+        <h4 class="col-10_sm-12">{{tea-menu.item}}</h4>
+        <p class="price col-2_sm-12">{{tea-menu.price}}</p>
+      </div>
+      {% endfor %}
+      <h3 class="text-m text-center pad-bottom-s">Fruit Shakes</h3>
+      {% for shake-menu in page.shake-menu %}
+      <div class="grid food-menu pad-bottom-xs">
+        <h4 class="col-10_sm-12">{{shake-menu.item}}</h4>
+        <p class="price col-2_sm-12">{{shake-menu.price}}</p>
+      </div>
+      {% endfor %}
+      <h3 class="text-m text-center pad-bottom-s">Smoothies</h3>
+      {% for smoothie-menu in page.smoothie-menu %}
+      <div class="grid food-menu pad-bottom-xs">
+        <h4 class="col-3_sm-12">{{smoothie-menu.item}}</h4>
+        <p class="col-7_sm-12">{{smoothie-menu.description}}</p>
+        <p class="price col-2_sm-12">{smoothie-menu.price}}</p>
+      </div>
+      {% endfor %}
+    </div>
+
   </section>
   <!-- this is the about section which has a full-width background image and a small box on the right for text -->
   <section id="about" class="about-image" style="background-image: url('{{page.about_image}}')">
