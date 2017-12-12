@@ -14,7 +14,7 @@ img {
 }
 h1,h2,h3 {
   font-family: 'Antic Slab', serif;
-  color: #353535
+  color: h
 }
 h4,h5,h6,p {
   font-family: 'PT Sans', sans-serif;
@@ -194,6 +194,14 @@ nav a:hover {
 }*/
 .price {
   text-align: right;
+}
+.hor-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #353535;
+  margin: 1em 0;
+  padding: 0;
 }
 @media all and (max-width:768px) {
   .food-menu {
