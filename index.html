@@ -28,7 +28,7 @@ drink-menu:
     price: 100 ฿
 coffee-menu:
   - item: Item Name
-    hot-price: Description of the item goes here
+    hot-price: 100 ฿
     cold-price: 100 ฿
 tea-menu:
   - item: Item Name
@@ -155,8 +155,8 @@ contact_image: /images/quinoabowl.jpg
       {% for coffee-menu in page.coffee-menu %}
       <div class="grid food-menu pad-bottom-xs">
         <h4 class="col-8_sm-12">{{coffee-menu.item}}</h4>
-        <p class="price col-2_sm-6">{{coffee-menu.hot-price}}</p>
-        <p class="price col-2_sm-6">{{coffee-menu.cold-price}}</p>
+        <p class="price col-2_sm-6">Hot {{coffee-menu.hot-price}}</p>
+        <p class="price col-2_sm-6">Cold {{coffee-menu.cold-price}}</p>
       </div>
       {% endfor %}
       <h3 class="text-m text-center pad-bottom-s">Tea</h3>
