@@ -199,7 +199,7 @@ nav a:hover {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid rgba(53, 53, 53, 0.8);
+  border-top: 1px solid rgba(53, 53, 53, 0.2);
   margin: 1em 30%;
   padding: 1% 0;
 }
