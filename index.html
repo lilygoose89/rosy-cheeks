@@ -8,13 +8,21 @@ keywords: >-
   mai,rosy cheeks cnx,rosy cheeks restaurant,best healthy restaurants chiang
   mai, fuji restaurant chiang mai
 recommended-menu:
-  - 1: Item Name
-    2: Description
-    3: Price
+  - item:
+    description:
+    price:
 thai-menu:
-  - 1: Item Name
-    2: Description
-    3: Price
+  - item:
+    description:
+    price:
+fusion-menu:
+  - item:
+    description:
+    price:
+salad-menu:
+  - item:
+    description:
+    price:
 hero_image: /images/rosycheeks-hero.jpg
 about_image: /images/RoseCheeksCMEatsNewcomer.jpg
 contact_image: /images/quinoabowl.jpg
@@ -85,22 +93,37 @@ contact_image: /images/quinoabowl.jpg
       <h2 class="text-l text-center pad-bottom-s">Menu</h2>
       <!-- these food menus will be a for-loop that needs to be edited by the front matter editor -->
       <h3 class="text-m text-center pad-bottom-s">Recommended Items</h3>
-      {% for reccommened-menu in page.reccommened-menu %}
+      {% for recommended-menu in page.recommended-menu %}
       <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">{{reccommened-menu.1}}</h4>
-        <p class="col-7_sm-12">{{reccommened-menu.2}}</p>
-        <p class="price col-2_sm-12">{{reccommened-menu.3}}</p>
+        <h4 class="col-3_sm-12">{{recommended-menu.item}}</h4>
+        <p class="col-7_sm-12">{{recommended-menu.description}}</p>
+        <p class="price col-2_sm-12">{{recommended-menu.price}}</p>
       </div>
       {% endfor %}
       <h3 class="text-m text-center pad-bottom-s">Thai Family Recipes</h3>
-      {% for thai-menu in page.thai-menu-menu %}
+      {% for thai-menu in page.thai-menu %}
       <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">{{thai-menu.1}}</h4>
-        <p class="col-7_sm-12">{{thai-menu.2}}</p>
-        <p class="price col-2_sm-12">{{thai-menu.3}}</p>
+        <h4 class="col-3_sm-12">{{thai-menu.item}}</h4>
+        <p class="col-7_sm-12">{{thai-menu.description}}</p>
+        <p class="price col-2_sm-12">{{thai-menu.price}}</p>
       </div>
       {% endfor %}
-
+      <h3 class="text-m text-center pad-bottom-s">International Fusion</h3>
+      {% for fusion-menu in page.fusion-menu %}
+      <div class="grid food-menu pad-bottom-xs">
+        <h4 class="col-3_sm-12">{{fusion-menu.item}}</h4>
+        <p class="col-7_sm-12">{{fusion-menu.description}}</p>
+        <p class="price col-2_sm-12">{{fusion-menu.price}}</p>
+      </div>
+      {% endfor %}
+      <h3 class="text-m text-center pad-bottom-s">Salads</h3>
+      {% for salad-menu in page.salad-menu %}
+      <div class="grid food-menu pad-bottom-xs">
+        <h4 class="col-3_sm-12">{{salad-menu.item}}</h4>
+        <p class="col-7_sm-12">{{salad-menu.description}}</p>
+        <p class="price col-2_sm-12">{salad-menu.price}}</p>
+      </div>
+      {% endfor %}
     </div>
   </section>
   <!-- this is the about section which has a full-width background image and a small box on the right for text -->
