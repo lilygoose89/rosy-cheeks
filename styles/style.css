@@ -199,9 +199,9 @@ nav a:hover {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #353535;
+  border-top: 1px solid rgba(53, 53, 53, 0.8);
   margin: 1em 30%;
-  padding: 0 0 1% 0;
+  padding: 0 1%;
 }
 @media all and (max-width:768px) {
   .food-menu {
