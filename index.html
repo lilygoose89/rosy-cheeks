@@ -52,19 +52,19 @@ hero_image: /images/rosycheeks-hero.jpg
         <i class="fa fa-clock-o pad-all-s text-l" aria-hidden="true"></i>
         <div class="grid-spaceAround">
           <div>
-            <p class="text-white">Lunch</p>
-            <p class="text-white">11:30 - 15:00</p>
+            <p class="editable text-white">Lunch</p>
+            <p class="editable text-white">11:30 - 15:00</p>
           </div>
           <div>
-            <p class="text-white">Dinner</p>
-            <p class="text-white">17:00 - 21:00</p>
+            <p class="editable text-white">Dinner</p>
+            <p class="editable text-white">17:00 - 21:00</p>
           </div>
         </div>
-        <p class="text-white">Closed Sundays</p>
+        <p class="editable text-white">Closed Sundays</p>
       </div>
       <div id="location" class="col-6_sm-12 bg-white text-green text-center">
         <i class="fa fa-map-marker pad-all-s text-l" aria-hidden="true"></i>
-        <p class="text-green">Soi Ban Ling Ha 3,Tambon Su Thep, Amphoe Mueang, Chiang Mai 50200</p>
+        <p class="editable text-green">Soi Ban Ling Ha 3,Tambon Su Thep, Amphoe Mueang, Chiang Mai 50200</p>
         <a target="_blank" href="https://www.google.co.th/maps/dir//Rosy-Cheeks,+Suthep,+Moung,+Chiang+Mai+50200/@18.7920902,98.9602075,14.11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x30da3a708ebc0e23:0x9c1a6fc559998b6b!2m2!1d98.956656!2d18.79106" class="button-s">directions</a>
       </div>
     </div>
@@ -73,6 +73,7 @@ hero_image: /images/rosycheeks-hero.jpg
   <section id="food-menu" class="bg-brick">
     <div class="bg-pink-trans shadow margin-all-m pad-all-s">
       <h2 class="text-l text-center pad-bottom-s">Menu</h2>
+      <!-- this food menu will be a for-loop that needs to be edited by the front matter editor -->
       <div class="grid food-menu pad-bottom-xs">
         <h4 class="col-3_sm-12">Menu item NAME goes here</h4>
         <p class="col-7_sm-12">Menu item DESCRIPTION goes here</p>
@@ -87,11 +88,11 @@ hero_image: /images/rosycheeks-hero.jpg
     </div>
   </section>
   <!-- this is the about section which has a full-width background image and a small box on the right for text -->
-  <section id="about" class="about-image">
+  <section id="about" class="about-image" style="background-image: url('{{page.about_image}}')">
     <div class="about-info">
       <div class="bg-white pad-all-s">
-        <h2 class="margin-bottom-xs text-green text-center text-m">About Us</h2>
-        <p>
+        <h2 class="editable margin-bottom-xs text-green text-center text-m">About Us</h2>
+        <p class="editable">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
         </p>
       </div>
@@ -110,7 +111,7 @@ hero_image: /images/rosycheeks-hero.jpg
     </div>
   </section>
   <!-- this is the contact form -->
-  <section id="contact" class="contact-image">
+  <section id="contact" class="contact-image" style="background-image: url('{{page.contact_image}}')">
     <div class="bg-white-trans shadow margin-all-m pad-all-xs text-center">
       <h2 class="text-m">Contact Us</h2>
       <form class="grid-center" method="POST" action="http://formspree.io/lily@cnxweb.site">
