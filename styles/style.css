@@ -201,7 +201,7 @@ nav a:hover {
   border: 0;
   border-top: 1px solid rgba(53, 53, 53, 0.8);
   margin: 1em 30%;
-  padding: 0 1%;
+  padding: 1% 0;
 }
 @media all and (max-width:768px) {
   .food-menu {
