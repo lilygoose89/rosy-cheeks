@@ -5,6 +5,9 @@
   margin: 0;
   /*border: solid 0.25px powderblue;*/
 }
+[class*=grid-],[class*=grid_],[class~=grid]{
+  margin: 0;
+}
 img {
   max-width: 100%;
   height: auto;
