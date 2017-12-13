@@ -1,5 +1,4 @@
 collections:
   posts:
-  examples:
     output: true
     permalink: /:collection/:name
