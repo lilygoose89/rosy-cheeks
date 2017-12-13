@@ -16,205 +16,159 @@
     <link rel='shortcut icon' type='image/x-icon' href='/images/favicon.ico' />
     <title>Rosy Cheeks Restaurant - </title>
   </head>
-  <body>
-  <!-- this is the sticker header nav with links to anchors on the same page -->
-  <header>
-    <nav id="menu" class="grid-spaceAround-middle">
-      <a href="#food-menu"><h2>menu</h2></a>
-      <a href="#about"><h2>about</h2></a>
-      <a href="#gallery"><h2>gallery</h2></a>
-      <a href="#delivery"><h2>delivery</h2></a>
-      <a href="#contact"><h2>contact</h2></a>
-      <a href="#"><h2><i class="fa fa-arrow-up" aria-hidden="true"></i></h2></a>
-    </nav>
-    <!-- this is the mobile nav -->
-    <div id="menu-mobile">
-      <a id="hamburger" href="#" title="home" class="toggle-mobile-menu">
-        <i class=" text-green fa fa-bars fa-2x" aria-hidden="true"></i>
-      </a>
-    </div>
-    <nav id="mobile-menu" class="grid-middle">
-      <a class="col-12 toggle-mobile-menu">
-        <i class="fa fa-times text-white" aria-hidden="true"></i>
-      </a>
-      <a href="#" class="toggle-mobile-menu">Home</a>
-      <a href="#food-menu" class="toggle-mobile-menu">Menu</a>
-      <a href="#about" class="toggle-mobile-menu">About</a>
-      <a href="#gallery" class="toggle-mobile-menu">Delivery</a>
-      <a href="#contact" class="toggle-mobile-menu">Contact</a>
-    </nav>
-  </header>
   <!-- this is the hero image which should take up the entire view height -->
-  <section id="hero" class="hero-image" style="background-image: url('/images/rosycheeks-hero.jpg')">
-    <div class="hero-title container-right text-right text-shadow">
-      <h1 class="editable text-white">Welcome to Rosy Cheeks Restaurant</h1>
-      <h3 class="editable text-white pad-top-xs pad-bottom-s">Chiang Mai, Thailand</h3>
-      <p class="editable text-white">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+<section id="hero" class="hero-image" style="background-image: url('/images/rosycheeks-hero.jpg')">
+  <div class="hero-title container-right text-right text-shadow">
+    <h1 class="editable text-white">Welcome to Rosy Cheeks Restaurant</h1>
+    <h3 class="editable text-white pad-top-xs pad-bottom-s">Chiang Mai, Thailand</h3>
+    <p class="editable text-white">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+  </div>
+  <!-- this is the container for restaurant information which should be top of the image on desktop and beneath the image in mobile -->
+  <div class="hero-info shadow grid">
+    <div id="hours" class="col-6_sm-12 bg-green text-white text-center">
+      <i class="fa fa-clock-o pad-all-s text-l" aria-hidden="true"></i>
+      <div class="grid-spaceAround">
+        <div>
+          <p class="editable text-white">Lunch</p>
+          <p class="editable text-white">11:30 - 15:00</p>
+        </div>
+        <div>
+          <p class="editable text-white">Dinner</p>
+          <p class="editable text-white">17:00 - 21:00</p>
+        </div>
+      </div>
+      <p class="editable text-white">Closed Sundays</p>
+    </div>
+    <div id="location" class="col-6_sm-12 bg-white text-green text-center">
+      <i class="fa fa-map-marker pad-all-s text-l" aria-hidden="true"></i>
+      <p class="editable text-green">Soi Ban Ling Ha 3,Tambon Su Thep, Amphoe Mueang, Chiang Mai 50200</p>
+      <a target="_blank" href="https://www.google.co.th/maps/dir//Rosy-Cheeks,+Suthep,+Moung,+Chiang+Mai+50200/@18.7920902,98.9602075,14.11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x30da3a708ebc0e23:0x9c1a6fc559998b6b!2m2!1d98.956656!2d18.79106" class="button-s">directions</a>
+    </div>
+  </div>
+</section>
+<!-- this is the menu section which has a brick background and a menu enclosed in a pink background -->
+<section id="food-menu" class="bg-brick">
+  <div class="bg-pink-trans shadow margin-all-m pad-all-s">
+    <h2 class="text-l text-center pad-bottom-s">Menu</h2>
+    <!-- these food menus will be a for-loop that needs to be edited by the front matter editor -->
+    <h3 class="text-m text-center pad-bottom-s">Recommended Items</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-3_sm-12">Item Name</h4>
+      <p class="col-7_sm-12">Description of the item goes here</p>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    <div class="hor-line"></div>
+    
+    <h3 class="text-m text-center pad-bottom-s">Thai Family Recipes</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-3_sm-12">Item Name</h4>
+      <p class="col-7_sm-12">Description of the item goes here</p>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    
+    <div class="hor-line"></div>
+    <h3 class="text-m text-center pad-bottom-s">International Fusion</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-3_sm-12">Item Name</h4>
+      <p class="col-7_sm-12">Description of the item goes here</p>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    
+    <div class="hor-line"></div>
+    <h3 class="text-m text-center pad-bottom-s">Salads</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-3_sm-12">Item Name</h4>
+      <p class="col-7_sm-12">Description of the item goes here</p>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    
+  </div>
+  <div class="bg-pink-trans shadow margin-all-m pad-all-s">
+    <h2 class="text-l text-center pad-bottom-s">Beverages</h2>
+    <h3 class="text-m text-center pad-bottom-s">Soft Drinks</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-10_sm-12">Item Name</h4>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    
+    <div class="hor-line"></div>
+    <h3 class="text-m text-center pad-bottom-s">Coffee</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-8_sm-12">Item Name</h4>
+      <p class="price col-2_sm-6">Hot 100 ฿</p>
+      <p class="price col-2_sm-6">Cold 100 ฿</p>
+    </div>
+    
+    <div class="hor-line"></div>
+    <h3 class="text-m text-center pad-bottom-s">Tea</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-10_sm-12">Item Name</h4>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    
+    <div class="hor-line"></div>
+    <h3 class="text-m text-center pad-bottom-s">Fruit Shakes</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-10_sm-12">Item Name</h4>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    
+    <div class="hor-line"></div>
+    <h3 class="text-m text-center pad-bottom-s">Smoothies</h3>
+    
+    <div class="grid food-menu pad-bottom-xs">
+      <h4 class="col-3_sm-12">Item Name</h4>
+      <p class="col-7_sm-12">Description of the item goes here</p>
+      <p class="price col-2_sm-12">100 ฿</p>
+    </div>
+    
+  </div>
+
+</section>
+<!-- this is the about section which has a full-width background image and a small box on the right for text -->
+<section id="about" class="about-image" style="background-image: url('/images/RoseCheeksCMEatsNewcomer.jpg')">
+  <div class="about-info">
+    <div class="bg-white pad-all-s">
+      <h2 class="editable margin-bottom-xs text-green text-center text-m">About Us</h2>
+      <p class="editable">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
       </p>
     </div>
-    <!-- this is the container for restaurant information which should be top of the image on desktop and beneath the image in mobile -->
-    <div class="hero-info shadow grid">
-      <div id="hours" class="col-6_sm-12 bg-green text-white text-center">
-        <i class="fa fa-clock-o pad-all-s text-l" aria-hidden="true"></i>
-        <div class="grid-spaceAround">
-          <div>
-            <p class="editable text-white">Lunch</p>
-            <p class="editable text-white">11:30 - 15:00</p>
-          </div>
-          <div>
-            <p class="editable text-white">Dinner</p>
-            <p class="editable text-white">17:00 - 21:00</p>
-          </div>
-        </div>
-        <p class="editable text-white">Closed Sundays</p>
-      </div>
-      <div id="location" class="col-6_sm-12 bg-white text-green text-center">
-        <i class="fa fa-map-marker pad-all-s text-l" aria-hidden="true"></i>
-        <p class="editable text-green">Soi Ban Ling Ha 3,Tambon Su Thep, Amphoe Mueang, Chiang Mai 50200</p>
-        <a target="_blank" href="https://www.google.co.th/maps/dir//Rosy-Cheeks,+Suthep,+Moung,+Chiang+Mai+50200/@18.7920902,98.9602075,14.11z/data=!4m8!4m7!1m0!1m5!1m1!1s0x30da3a708ebc0e23:0x9c1a6fc559998b6b!2m2!1d98.956656!2d18.79106" class="button-s">directions</a>
-      </div>
-    </div>
-  </section>
-  <!-- this is the menu section which has a brick background and a menu enclosed in a pink background -->
-  <section id="food-menu" class="bg-brick">
-    <div class="bg-pink-trans shadow margin-all-m pad-all-s">
-      <h2 class="text-l text-center pad-bottom-s">Menu</h2>
-      <!-- these food menus will be a for-loop that needs to be edited by the front matter editor -->
-      <h3 class="text-m text-center pad-bottom-s">Recommended Items</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">Item Name</h4>
-        <p class="col-7_sm-12">Description of the item goes here</p>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      <div class="hor-line"></div>
-      
-      <h3 class="text-m text-center pad-bottom-s">Thai Family Recipes</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">Item Name</h4>
-        <p class="col-7_sm-12">Description of the item goes here</p>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      
-      <div class="hor-line"></div>
-      <h3 class="text-m text-center pad-bottom-s">International Fusion</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">Item Name</h4>
-        <p class="col-7_sm-12">Description of the item goes here</p>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      
-      <div class="hor-line"></div>
-      <h3 class="text-m text-center pad-bottom-s">Salads</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">Item Name</h4>
-        <p class="col-7_sm-12">Description of the item goes here</p>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      
-    </div>
-    <div class="bg-pink-trans shadow margin-all-m pad-all-s">
-      <h2 class="text-l text-center pad-bottom-s">Beverages</h2>
-      <h3 class="text-m text-center pad-bottom-s">Soft Drinks</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-10_sm-12">Item Name</h4>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      
-      <div class="hor-line"></div>
-      <h3 class="text-m text-center pad-bottom-s">Coffee</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-8_sm-12">Item Name</h4>
-        <p class="price col-2_sm-6">Hot 100 ฿</p>
-        <p class="price col-2_sm-6">Cold 100 ฿</p>
-      </div>
-      
-      <div class="hor-line"></div>
-      <h3 class="text-m text-center pad-bottom-s">Tea</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-10_sm-12">Item Name</h4>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      
-      <div class="hor-line"></div>
-      <h3 class="text-m text-center pad-bottom-s">Fruit Shakes</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-10_sm-12">Item Name</h4>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      
-      <div class="hor-line"></div>
-      <h3 class="text-m text-center pad-bottom-s">Smoothies</h3>
-      
-      <div class="grid food-menu pad-bottom-xs">
-        <h4 class="col-3_sm-12">Item Name</h4>
-        <p class="col-7_sm-12">Description of the item goes here</p>
-        <p class="price col-2_sm-12">100 ฿</p>
-      </div>
-      
-    </div>
-
-  </section>
-  <!-- this is the about section which has a full-width background image and a small box on the right for text -->
-  <section id="about" class="about-image" style="background-image: url('/images/RoseCheeksCMEatsNewcomer.jpg')">
-    <div class="about-info">
-      <div class="bg-white pad-all-s">
-        <h2 class="editable margin-bottom-xs text-green text-center text-m">About Us</h2>
-        <p class="editable">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- this is the section which contains the instagram gallery and the blurb regarding deliveries, the background of this section is the same brick from behind the menu section -->
-  <section class="bg-brick">
-    <div id="gallery" class="margin-all-m shadow">
-      <!-- embeded instagram widget -->
-      <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/942824baed025504b94d334be15b7a92.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-    </div>
-    <div id="delivery" class="text-center bg-white-trans shadow margin-all-m pad-all-s">
-      <h2 class="text-green text-l">We deliver with BEP Bicycle Couriers</h2>
-      <h4 class="text-m margin-top-xs margin-bottom-s">Send them your order via Facebook Messenger or Line to place a delivery.</h4>
-      <a href="https://www.facebook.com/pg/bepcyclecouriers/about/" class="button text-m">order now</a>
-    </div>
-  </section>
-  <!-- this is the contact form -->
-  <section id="contact" class="contact-image" style="background-image: url('/images/quinoabowl.jpg')">
-    <div class="bg-white-trans shadow margin-all-m pad-all-xs text-center">
-      <h2 class="text-m">Contact Us</h2>
-      <form class="grid-center" method="POST" action="http://formspree.io/lily@cnxweb.site">
-        <input type="name" name="name" placeholder="Your name" required />
-        <input type="email" name="email" placeholder="Your email" required />
-        <textarea name="message" placeholder="Your message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </div>
-  </section>
-  <footer class="bg-pink">
-    <div class="grid-spaceAround max-width pad-all-s text-white footer-icon">
-      <a href="https://www.tripadvisor.com/Restaurant_Review-g293917-d11872721-Reviews-Rosy_Cheeks-Chiang_Mai.html"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
-      <a href="https://www.instagram.com/rosycheeks_cnx/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="https://www.facebook.com/rosycheekschiangmai/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href="https://www.wongnai.com/restaurants/254953vv-rosy-cheeks"><img class="footer-img" src="images/wongnai-logo.png" alt="wongnai icon" /></a>
-    </div>
-    <a href="tel:+66938420197"><h3 class="text-white text-center text-l pad-bottom-s">+66 (0)93 842 0197</h3></a>
-  </footer>
-  <footer class="bg-dark text-center pad-all-xs">
-    <h4 class="text-white"> <i class="fa fa-copyright" aria-hidden="true"></i> <a href="cnxweb.site">CNX Web</a> <script type="text/javascript">
-  document.write(new Date().getFullYear());
-</script></h4>
-  </footer>
-  <!-- mobile menu javascript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/main.js" type="text/javascript"></script>
-</body>
+  </div>
+</section>
+<!-- this is the section which contains the instagram gallery and the blurb regarding deliveries, the background of this section is the same brick from behind the menu section -->
+<section class="bg-brick">
+  <div id="gallery" class="margin-all-m shadow">
+    <!-- embeded instagram widget -->
+    <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/942824baed025504b94d334be15b7a92.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+  </div>
+  <div id="delivery" class="text-center bg-white-trans shadow margin-all-m pad-all-s">
+    <h2 class="text-green text-l">We deliver with BEP Bicycle Couriers</h2>
+    <h4 class="text-m margin-top-xs margin-bottom-s">Send them your order via Facebook Messenger or Line to place a delivery.</h4>
+    <a href="https://www.facebook.com/pg/bepcyclecouriers/about/" class="button text-m">order now</a>
+  </div>
+</section>
+<!-- this is the contact form -->
+<section id="contact" class="contact-image" style="background-image: url('/images/quinoabowl.jpg')">
+  <div class="bg-white-trans shadow margin-all-m pad-all-xs text-center">
+    <h2 class="text-m">Contact Us</h2>
+    <form class="grid-center" method="POST" action="http://formspree.io/lily@cnxweb.site">
+      <input type="name" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
 
 </html>

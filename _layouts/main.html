@@ -1,0 +1,50 @@
+---
+layout: head
+---
+<body>
+  <!-- this is the sticker header nav with links to anchors on the same page -->
+  <header>
+    <nav id="menu" class="grid-spaceAround-middle">
+      <a href="#food-menu"><h2>menu</h2></a>
+      <a href="#about"><h2>about</h2></a>
+      <a href="#gallery"><h2>gallery</h2></a>
+      <a href="#delivery"><h2>delivery</h2></a>
+      <a href="#contact"><h2>contact</h2></a>
+      <a href="#"><h2><i class="fa fa-arrow-up" aria-hidden="true"></i></h2></a>
+    </nav>
+    <!-- this is the mobile nav -->
+    <div id="menu-mobile">
+      <a id="hamburger" href="#" title="home" class="toggle-mobile-menu">
+        <i class=" text-green fa fa-bars fa-2x" aria-hidden="true"></i>
+      </a>
+    </div>
+    <nav id="mobile-menu" class="grid-middle">
+      <a class="col-12 toggle-mobile-menu">
+        <i class="fa fa-times text-white" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="toggle-mobile-menu">Home</a>
+      <a href="#food-menu" class="toggle-mobile-menu">Menu</a>
+      <a href="#about" class="toggle-mobile-menu">About</a>
+      <a href="#gallery" class="toggle-mobile-menu">Delivery</a>
+      <a href="#contact" class="toggle-mobile-menu">Contact</a>
+    </nav>
+  </header>
+  {{content}
+  <footer class="bg-pink">
+    <div class="grid-spaceAround max-width pad-all-s text-white footer-icon">
+      <a href="https://www.tripadvisor.com/Restaurant_Review-g293917-d11872721-Reviews-Rosy_Cheeks-Chiang_Mai.html"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/rosycheeks_cnx/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/rosycheekschiangmai/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="https://www.wongnai.com/restaurants/254953vv-rosy-cheeks"><img class="footer-img" src="images/wongnai-logo.png" alt="wongnai icon" /></a>
+    </div>
+    <a href="tel:+66938420197"><h3 class="text-white text-center text-l pad-bottom-s">+66 (0)93 842 0197</h3></a>
+  </footer>
+  <footer class="bg-dark text-center pad-all-xs">
+    <h4 class="text-white"> <i class="fa fa-copyright" aria-hidden="true"></i> <a href="cnxweb.site">CNX Web</a> <script type="text/javascript">
+  document.write(new Date().getFullYear());
+</script></h4>
+  </footer>
+  <!-- mobile menu javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
+</body>
