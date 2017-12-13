@@ -5,13 +5,16 @@
   margin: 0;
   /*border: solid 0.25px powderblue;*/
 }
+[class*=grid-],[class*=grid_],[class~=grid]{
+  margin: 0;
+}
 img {
   max-width: 100%;
   height: auto;
 }
 h1,h2,h3 {
   font-family: 'Antic Slab', serif;
-  color: #353535
+  color: h
 }
 h4,h5,h6,p {
   font-family: 'PT Sans', sans-serif;
@@ -68,6 +71,7 @@ button {
   text-transform: uppercase;
   border-radius: 45px;
   padding: 5px 20px;
+  border-color: transparent;
 }
 button:hover {
   transform: scale(1.1);
@@ -190,6 +194,14 @@ nav a:hover {
 }*/
 .price {
   text-align: right;
+}
+.hor-line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(53, 53, 53, 0.2);
+  margin: 1em 30%;
+  padding: 1% 0;
 }
 @media all and (max-width:768px) {
   .food-menu {
