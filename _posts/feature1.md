@@ -1,3 +1,9 @@
+---
+layout: main
+title: Markdown Example
+description: This is a sample page to demonstrate markdown language
+---
+
 An h1 header
 ============
 
