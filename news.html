@@ -21,19 +21,23 @@ description: Featured Menus, Events, and other updates from Rosy Cheeks Restaura
     </div>
   </div>
   {% endfor %}
-  <div class="pad-all-m">
+  <div class="pad-top-s pad-left-m pad-right-m">
+    <h2 class="text-center text-l text_shadow pad-bottom-s">Previous News</h2>
   <!-- previous posts looped by jekyll -->
-  {% for post in site.posts limit:5 offset:1 %}
-  <div class="col_sm-12 bg-white-trans shadow margin-all-xs grid">
-    <img class="col-6_sm-12" src="{{post.hero_image}}" alt="{{post.title}} image">
-    <div class="col-6_sm-12 pad-all-s">
-      <h2>{{post.title}}</h2>
-      <p>{{post.content}}</p>
-      <h6>Published {{post.date | date: '%B %d, %Y'}}</h6>
+    {% for post in site.posts limit:5 offset:1 %}
+    <div class="col_sm-12 bg-white-trans shadow margin-all-xs grid">
+      <div class="col-6_sm-12 pad-none">
+        <img src="{{post.hero_image}}" alt="{{post.title}} image">
+      </div>
+      <div class="col-6_sm-12 pad-all-s">
+        <h2>{{post.title}}</h2>
+        <p>{{post.description}}</p>
+        <h6>Published {{post.date | date: '%B %d, %Y'}}</h6>
+      </div>
+      <div class="pad-all-s">
+        {{post.content}}
+      </div>
     </div>
-    <div class="text-center">
-    </div>
-  </div>
-  {% endfor %}
+    {% endfor %}
   </div>
 </section>
