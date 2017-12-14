@@ -491,3 +491,6 @@ footer a:hover {
   height: 100%;
   padding: 0;
 } */
+.margin-bottom-m-force {
+    margin-bottom: 10% !important;
+}
