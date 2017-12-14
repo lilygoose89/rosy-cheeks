@@ -188,7 +188,19 @@ nav a:hover {
     margin: auto 0;
   }
 }
-/* food menu styling ------------------------------------------------------------ */
+/* news hero styling ------------------------------------------------------- */
+.news-featured-post {
+  position: relative;
+  top: 60vh;
+  height: 110%;
+  overflow-y: hidden;
+}
+@media all and (max-width:768px) {
+  .news-featured-post {
+    position: static;
+  }
+}
+/* food menu styling ------------------------------------------------------- */
 /*.food-menu {
   text-align: center;
 }*/

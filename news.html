@@ -1,5 +1,39 @@
 ---
 layout: default
-title:
-description:
+title: Rosy Cheeks - News and Updates
+tagline:
+description: Featured Menus, Events, and other updates from Rosy Cheeks Restaurant in Chiang Mai Thailand.
 ---
+<section class="bg-brick">
+  {% for post in site.posts limit:1 %}
+  <div id="hero" class="hero-image" style="background-image: url('{{post.hero_image}}')">
+    <div class="bg-white-trans shadow margin-left-m margin-right-m pad-all-s text-center news-featured-post">
+      <h1>{{post.title}}</h1>
+      <h3 class="pad-top-xs pad-bottom-s">{{post.description}}</h3>
+      <h6>Published {{post.date | date: '%B %d, %Y'}}</h6>
+    </div>
+  </div>
+  <div class="pad-left-m pad-right-m">
+    <div class="bg-white-trans shadow pad-all-s">
+      <p>
+        {{post.content}}
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="pad-all-m">
+  <!-- previous posts looped by jekyll -->
+  {% for post in site.posts limit:5 offset:1 %}
+  <div class="col_sm-12 bg-white-trans shadow margin-all-xs grid">
+    <img class="col-6_sm-12" src="{{post.hero_image}}" alt="{{post.title}} image">
+    <div class="col-6_sm-12 pad-all-s">
+      <h2>{{post.title}}</h2>
+      <p>{{post.content}}</p>
+      <h6>Published {{post.date | date: '%B %d, %Y'}}</h6>
+    </div>
+    <div class="text-center">
+    </div>
+  </div>
+  {% endfor %}
+  </div>
+</section>
