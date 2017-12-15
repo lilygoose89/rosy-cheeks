@@ -8,6 +8,7 @@ description: Featured Menus, Events, and other updates from Rosy Cheeks Restaura
   {% for post in site.posts limit:1 %}
   <div id="hero" class="hero-image" style="background-image: url('{{post.hero_image}}')">
     <div class="bg-white-trans shadow margin-left-m margin-right-m pad-all-s text-center news-featured-post">
+      <h2>Latest News:</h2>
       <h1>{{post.title}}</h1>
       <h3 class="pad-top-xs pad-bottom-s">{{post.description}}</h3>
       <h6>Published {{post.date | date: '%B %d, %Y'}}</h6>
