@@ -486,8 +486,14 @@ footer a:hover {
 .margin-left-l {
   margin-left: 20%
 }
+.margin-none {
+  margin: 0;
+}
 /* odd helpers ------------------------------------------------------------- */
 /* .fix-image {
   height: 100%;
   padding: 0;
 } */
+.margin-bottom-s-force {
+    margin-bottom: 5% !important;
+}

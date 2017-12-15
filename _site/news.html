@@ -20,6 +20,7 @@
     <!-- this is the sticky header nav with links to anchors on the same page -->
     <header>
       <nav id="menu" class="grid-spaceAround-middle">
+        <a href="/"><h2><i class="fa fa-home" aria-hidden="true"></i></h2></a>
         <a href="/#food-menu"><h2>menu</h2></a>
         <a href="/#about"><h2>about</h2></a>
         <a href="/#gallery"><h2>gallery</h2></a>
@@ -50,19 +51,16 @@
   
   <div id="hero" class="hero-image" style="background-image: url('https://static.pexels.com/photos/372882/pexels-photo-372882.jpeg')">
     <div class="bg-white-trans shadow margin-left-m margin-right-m pad-all-s text-center news-featured-post">
-      <h1>Default Post in Markdown</h1>
+      <h1>Testing another post</h1>
       <h3 class="pad-top-xs pad-bottom-s">This post is a placeholder to define styles for new posts to be built off of.</h3>
-      <h6>Published December 14, 2017</h6>
+      <h6>Published December 15, 2017</h6>
     </div>
   </div>
   <div class="pad-left-m pad-right-m">
     <div class="bg-white-trans shadow pad-all-s">
       <p>
-        Here is some information. Stuff, stuff, and more stuff. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p>Blah blah blah.</p>
 
-We hope you join us for our event on **December 10, 2017**.
-
-![](/uploads/versions/screen-shot-2017-12-05-at-12-38-33-pm---x----772-574x---.png)
       </p>
     </div>
   </div>
@@ -71,23 +69,43 @@ We hope you join us for our event on **December 10, 2017**.
     <h2 class="text-center text-l text_shadow pad-bottom-s">Previous News</h2>
   <!-- previous posts looped by jekyll -->
     
-    <div class="col_sm-12 bg-white-trans shadow margin-all-xs grid">
+    <div id="#previous-updates" class="col_sm-12 bg-white-trans shadow margin-bottom-s-force grid">
       <div class="col-6_sm-12 pad-none">
-        <img src="https://static.pexels.com/photos/372882/pexels-photo-372882.jpeg" alt="Default Post in Markdown image">
+        <img src="https://static.pexels.com/photos/372882/pexels-photo-372882.jpeg" class="pad-none" alt="Default Post in Markdown image">
       </div>
       <div class="col-6_sm-12 pad-all-s">
         <h2>Default Post in Markdown</h2>
         <p>This post is a placeholder to define styles for new posts to be built off of.</p>
-        <h6>Published December 14, 2017</h6>
+        <h6 class="pad-bottom-s">Published December 14, 2017</h6>
+        <a class="button text-m" href="/posts/2017-12-14-default-post-in-markdown">Read More</a>
       </div>
-      <div class="pad-all-s">
+      <!-- <div class="pad-all-s">
         <p>Here is some information. Stuff, stuff, and more stuff. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 <p>We hope you join us for our event on <strong>December 10, 2017</strong>.</p>
 
 <p><img src="/uploads/versions/screen-shot-2017-12-05-at-12-38-33-pm---x----772-574x---.png" alt="" /></p>
 
+      </div> -->
+    </div>
+    
+    <div id="#previous-updates" class="col_sm-12 bg-white-trans shadow margin-bottom-s-force grid">
+      <div class="col-6_sm-12 pad-none">
+        <img src="https://static.pexels.com/photos/372882/pexels-photo-372882.jpeg" class="pad-none" alt="Default Post in HTML image">
       </div>
+      <div class="col-6_sm-12 pad-all-s">
+        <h2>Default Post in HTML</h2>
+        <p>This post is a placeholder to define styles for new posts to be built off of.</p>
+        <h6 class="pad-bottom-s">Published December 14, 2017</h6>
+        <a class="button text-m" href="/posts/2017-12-14-default-post-in-html">Read More</a>
+      </div>
+      <!-- <div class="pad-all-s">
+        Here is some information. Stuff, stuff, and more stuff. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+We hope you join us for our event on **December 10, 2017**.
+
+![](/uploads/versions/screen-shot-2017-12-05-at-12-38-33-pm---x----772-574x---.png)
+      </div> -->
     </div>
     
   </div>
@@ -98,7 +116,7 @@ We hope you join us for our event on **December 10, 2017**.
         <a href="https://www.tripadvisor.com/Restaurant_Review-g293917-d11872721-Reviews-Rosy_Cheeks-Chiang_Mai.html" target="_blank"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
         <a href="https://www.instagram.com/rosycheeks_cnx/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         <a href="https://www.facebook.com/rosycheekschiangmai/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="https://www.wongnai.com/restaurants/254953vv-rosy-cheeks" target="_blank"><img class="footer-img" src="images/wongnai-logo.png" alt="wongnai icon" /></a>
+        <a href="https://www.wongnai.com/restaurants/254953vv-rosy-cheeks" target="_blank"><img class="footer-img" src="/images/wongnai-logo.png" alt="wongnai icon" /></a>
       </div>
       <a href="tel:+66938420197"><h3 class="text-white text-center text-m pad-bottom-s">+66 (0)93 842 0197</h3></a>
     </footer>
