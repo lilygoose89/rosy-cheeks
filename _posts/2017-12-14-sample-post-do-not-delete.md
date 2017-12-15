@@ -8,6 +8,7 @@ hero_image: 'https://static.pexels.com/photos/372882/pexels-photo-372882.jpeg'
 keywords: >-
   rosy cheeks restaurant, chiang mai restaurants, healthy restaurants chiang
   mai, good food chiang mai
+published: false
 ---
 
 
