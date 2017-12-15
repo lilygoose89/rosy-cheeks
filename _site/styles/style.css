@@ -191,7 +191,7 @@ nav a:hover {
 /* news hero styling ------------------------------------------------------- */
 .news-featured-post {
   position: relative;
-  top: 60vh;
+  top: 55vh;
   height: 110%;
   overflow-y: hidden;
 }
