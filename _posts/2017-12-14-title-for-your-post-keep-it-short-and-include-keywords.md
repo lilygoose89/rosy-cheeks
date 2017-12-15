@@ -1,11 +1,13 @@
 ---
 layout: posts
-title: Default Post in Markdown
-description: This post is a placeholder to define styles for new posts to be built off of.
+title: Title for Your Post Keep it Short and Include Keywords
+description: Type in a brief description here. This will show up in Google
 date: 2017-12-14 00:00:00
-author:
+author: Fuji
 hero_image: 'https://static.pexels.com/photos/372882/pexels-photo-372882.jpeg'
-keywords:
+keywords: >-
+  keywords separated by commas like, restaurant, eat healthy, rosy cheeks chiang
+  mai
 ---
 
 
