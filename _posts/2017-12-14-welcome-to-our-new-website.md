@@ -21,4 +21,4 @@ We're have been overwhelmed by the support and enthusiasm of you, our customers,
 
 ---
 
-\*Change your life by what you eat.\*
+***Change your life by what you eat.***
