@@ -276,8 +276,8 @@ form button {
   font-size: 2em;
 }
 .footer-img {
-  max-height: 33px;
-  max-width: 33px;
+  max-height: 32px;
+  max-width: 32px;
   padding-top: 3px;
 }
 footer a:hover {
