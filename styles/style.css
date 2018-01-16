@@ -273,11 +273,11 @@ form button {
 }
 /* footer ------------------------------------------------------------------ */
 .footer-icon {
-  font-size: 4em;
+  font-size: 2.5em;
 }
 .footer-img {
-  max-height: 60px;
-  max-width: 60px;
+  max-height: 30px;
+  max-width: 30px;
   padding-top: 5px;
 }
 footer a:hover {
