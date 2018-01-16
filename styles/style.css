@@ -179,11 +179,11 @@ nav a:hover {
     height: 100%;
   }
   .hero-title {
-    padding: 0;
+    padding: 10% 0 0 0;
     margin: auto;
     text-align: center !important;
     position: relative;
-    height: 75vh;
+    height: 76vh;
   }
   .hero-info {
     width: 100%;
