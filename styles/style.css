@@ -108,7 +108,7 @@ nav a:hover {
 }
 /* mobile menu ------------------------------------------------------------- */
 #mobile-menu {
-  background-color: #7dc95e;
+  background-color: rgba (255, 255, 252, 0.8);
   text-align: center;
   text-transform: uppercase;
   position: fixed;
@@ -179,7 +179,7 @@ nav a:hover {
     height: 100%;
   }
   .hero-title {
-    padding: 10% 0 0 0;
+    padding: 20% 0 0 0;
     margin: auto;
     text-align: center !important;
     position: relative;
