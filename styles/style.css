@@ -103,12 +103,12 @@ nav a:hover {
   top: 0;
   height: 40px;
   width: 100%;
-  background-color: white;
+  background-color: rgba (255, 255, 252, 0.8);
   box-shadow: 2px 2px 20px grey;
 }
 /* mobile menu ------------------------------------------------------------- */
 #mobile-menu {
-  background-color: rgba (255, 255, 252, 0.8);
+  background-color: #7dc95e;
   text-align: center;
   text-transform: uppercase;
   position: fixed;
