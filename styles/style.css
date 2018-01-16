@@ -176,7 +176,8 @@ nav a:hover {
 }
 @media all and (max-width:768px) {
   .hero-image {
-    height: 100%;
+    position: relative;
+    height: 70vh;
   }
   .hero-title {
     padding: 0;
